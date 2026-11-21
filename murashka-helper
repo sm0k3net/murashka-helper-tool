@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+directory=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
+if [ ! -x "$directory/.venv/bin/python" ]; then
+    printf '%s\n' 'Run ./setup.sh first.' >&2
+    exit 1
+fi
+exec "$directory/.venv/bin/python" "$directory/helper/cli.py" "$@"

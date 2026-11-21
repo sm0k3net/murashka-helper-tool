@@ -1,0 +1,13 @@
+[Unit]
+Description=Murashka Helper Tool
+After=network-online.target
+[Service]
+Type=simple
+WorkingDirectory=%h/murashka-helper-tool
+ExecStart=%h/murashka-helper-tool/murashka-helper serve
+Restart=on-failure
+RestartSec=15
+NoNewPrivileges=true
+UMask=0077
+[Install]
+WantedBy=default.target

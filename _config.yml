@@ -1,0 +1,19 @@
+# The site is published from main / (root).
+exclude:
+  - .github
+  - .gitignore
+  - helper
+  - tests
+  - deploy
+  - docs
+  - setup.sh
+  - murashka-helper
+  - requirements.txt
+  - README.md
+  - SECURITY.md
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - VERSION
+
+  - site/README.md
